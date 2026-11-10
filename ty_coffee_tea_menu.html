@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="មីនុយភេសជ្ជៈ Ty Coffee & Tea — កាហ្វេ តែ ភេសជ្ជៈដូង និងភេសជ្ជៈពិសេស។">
+    <title>Ty Coffee & Tea | មីនុយភេសជ្ជៈ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kantumruy Pro', sans-serif;
+            background-color: #fcf8f5;
+        }
+        .menu-search:focus {
+            outline: 2px solid #d4af37;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-[#2c1d11] text-gray-100 min-h-screen py-10 px-4">
+    <div class="max-w-4xl mx-auto bg-[#3d2719] border-4 border-[#d4af37] rounded-2xl shadow-2xl p-6 md:p-10">
+        
+        <!-- Header -->
+        <header class="text-center border-b-2 border-[#d4af37]/40 pb-6 mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#f3e5ab] tracking-wide mb-2">Ty Coffee & Tea</h1>
+            <p class="text-xl text-[#ffcc00] font-medium italic mb-4">"ភេសជ្ជៈកំពុងពេញនិយមខ្លាំង"</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm md:text-base text-gray-300">
+                <a class="flex items-center gap-2 hover:text-[#f3e5ab]" href="tel:078559508">📞 078 55 95 08</a>
+                <a class="flex items-center gap-2 hover:text-[#f3e5ab]" href="tel:0969914159">📞 096 99 14 159</a>
+                <span class="flex items-center gap-2">📘 Facebook: Ya Ty</span>
+            </div>
+        </header>
+
+        <div class="mb-8">
+            <label for="menu-search" class="block text-sm text-gray-300 mb-2">ស្វែងរកភេសជ្ជៈ</label>
+            <input id="menu-search" class="menu-search w-full rounded-xl border border-[#d4af37]/40 bg-[#2a1a10] px-4 py-3 text-gray-100 placeholder:text-gray-500" type="search" placeholder="ឧ. កាហ្វេ, ដូង, តែបៃតង" autocomplete="off">
+        </div>
+
+        <nav aria-label="ប្រភេទភេសជ្ជៈ" class="sticky top-0 z-20 -mx-6 md:-mx-10 mb-8 border-b border-[#d4af37]/30 bg-[#3d2719]/95 px-6 py-3 backdrop-blur md:px-10">
+            <div class="flex flex-nowrap gap-2 overflow-x-auto pb-1">
+                <a href="#coconut" data-category-link="coconut" class="flex-none rounded-full border border-[#d4af37]/50 px-4 py-2 text-sm text-[#f3e5ab] hover:bg-[#d4af37]/20">🥥 ដូងក្រអូប</a>
+                <a href="#tea" data-category-link="tea" class="flex-none rounded-full border border-[#d4af37]/50 px-4 py-2 text-sm text-[#f3e5ab] hover:bg-[#d4af37]/20">🧋 ទឹកកក និងតែ</a>
+                <a href="#smoothies" data-category-link="smoothies" class="flex-none rounded-full border border-[#d4af37]/50 px-4 py-2 text-sm text-[#f3e5ab] hover:bg-[#d4af37]/20">🥤 ក្រឡុក</a>
+                <a href="#special" data-category-link="special" class="flex-none rounded-full border border-[#d4af37]/50 px-4 py-2 text-sm text-[#f3e5ab] hover:bg-[#d4af37]/20">✨ គ្រីម និងភេសជ្ជៈពិសេស</a>
+                <a href="#toppings" data-category-link="toppings" class="flex-none rounded-full border border-[#d4af37]/50 px-4 py-2 text-sm text-[#f3e5ab] hover:bg-[#d4af37]/20">🍮 គ្រឿងបន្ថែម</a>
+            </div>
+        </nav>
+
+        <!-- Menu Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Category 1: ប្រភេទដូងក្រអូប -->
+            <div id="coconut" class="menu-category scroll-mt-6 bg-[#2a1a10] p-5 rounded-xl border border-[#d4af37]/30 shadow-md">
+                <h2 class="text-xl font-bold text-[#f3e5ab] border-b border-[#d4af37]/20 pb-2 mb-4 flex items-center gap-2">
+                    🥥 ប្រភេទដូងក្រអូប
+                </h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>កាហ្វេដូង</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>តែអម៉តដូងក្រអូប</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>តែបៃតងដូង</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ត្រាវដូង</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ស្ករត្នោតដូងក្រអូប</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>តែក្រហមដូង</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ស្ករត្នោតតែបៃតងដូង</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>ស្ករត្នោតតែអម៉តដូង</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category 2: ប្រភេទទឹកកក និងតែ -->
+            <div id="tea" class="menu-category scroll-mt-6 bg-[#2a1a10] p-5 rounded-xl border border-[#d4af37]/30 shadow-md">
+                <h2 class="text-xl font-bold text-[#f3e5ab] border-b border-[#d4af37]/20 pb-2 mb-4 flex items-center gap-2">
+                    🧋 ប្រភេទទឹកកក និងតែ
+                </h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>កាហ្វេទឹកដោះគោ / កាហ្វេទឹកកក</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>តែក្រហម / តែអម៉ត / តែបៃតង (ជាមួយចាហួយ)</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>សូកូឡាទឹកដោះគោ</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ត្រាវទឹកដោះគោ</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ថៃសូដាទឹកដោះគោ / ប៊្លូបឺរីទឹកដោះគោ</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>សូដាផ្សេងៗ (ប៊្លូបឺរី, ត្រាវ, សាលីសូដា, គីវី)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category 3: ប្រភេទក្រឡុក -->
+            <div id="smoothies" class="menu-category scroll-mt-6 bg-[#2a1a10] p-5 rounded-xl border border-[#d4af37]/30 shadow-md">
+                <h2 class="text-xl font-bold text-[#f3e5ab] border-b border-[#d4af37]/20 pb-2 mb-4 flex items-center gap-2">
+                    🥤 ប្រភេទក្រឡុក (Smoothies)
+                </h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ស្ករត្នោតក្រឡុក</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>កាហ្វេក្រឡុក</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ស្រ្តប៊ឺរីក្រឡុក</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>តែបៃតងក្រឡុក</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category 4: ប្រភេទគ្រីម និងភេសជ្ជៈពិសេស -->
+            <div id="special" class="menu-category scroll-mt-6 bg-[#2a1a10] p-5 rounded-xl border border-[#d4af37]/30 shadow-md">
+                <h2 class="text-xl font-bold text-[#f3e5ab] border-b border-[#d4af37]/20 pb-2 mb-4 flex items-center gap-2">
+                    ✨ ប្រភេទគ្រីម និងភេសជ្ជៈពិសេស
+                </h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ផាសសិនគ្រីម</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ស្វាយគ្រីម / ស្រ្តប៊ឺរីគ្រីម</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>ត្រាវសូដាគ្រីម</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-dashed border-gray-700 pb-1">
+                        <span>តែទឹកដោះគោគ្រីម</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>ដូងទុំស្វាយគ្រីម</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Topping Section -->
+        <div id="toppings" class="menu-category scroll-mt-6 mt-8 bg-[#2a1a10] p-5 rounded-xl border border-[#d4af37]/30 shadow-md">
+            <h2 class="text-xl font-bold text-[#f3e5ab] border-b border-[#d4af37]/20 pb-2 mb-4 text-center">
+                🍮 គ្រឿងបន្ថែម (Topping)
+            </h2>
+            <div class="flex flex-wrap justify-center gap-6 text-gray-300 font-medium">
+                <span data-menu-item class="bg-[#3d2719] px-4 py-2 rounded-lg border border-[#d4af37]/20">គុជ (Pearl)</span>
+                <span data-menu-item class="bg-[#3d2719] px-4 py-2 rounded-lg border border-[#d4af37]/20">គ្រែម (Cream)</span>
+                <span data-menu-item class="bg-[#3d2719] px-4 py-2 rounded-lg border border-[#d4af37]/20">ចាហួយល្ងង់</span>
+                <span data-menu-item class="bg-[#3d2719] px-4 py-2 rounded-lg border border-[#d4af37]/20">ឆៅគួយ (Grass Jelly)</span>
+            </div>
+        </div>
+
+        <p id="no-results" class="mt-8 text-center text-gray-300" role="status" hidden>រកមិនឃើញភេសជ្ជៈដែលត្រូវនឹងពាក្យស្វែងរកទេ។</p>
+
+        <!-- Footer Note -->
+        <footer class="text-center mt-10 text-gray-400 text-sm">
+            <p class="mb-4">សូមទាក់ទងមកយើងខ្ញុំ ដើម្បីសាកសួរតម្លៃ និងកម្មង់ភេសជ្ជៈ។</p>
+            <a href="tel:078559508" class="inline-block rounded-full bg-[#d4af37] px-6 py-3 font-bold text-[#2c1d11] hover:bg-[#f3e5ab]">📞 ទូរស័ព្ទកម្មង់</a>
+            <p class="mt-5">សូមអរគុណចំពោះការគាំទ្រហាង Ty Coffee & Tea 🙏</p>
+        </footer>
+
+    </div>
+    <script>
+        const searchInput = document.getElementById('menu-search');
+        const menuCategories = document.querySelectorAll('.menu-category');
+        const categoryLinks = document.querySelectorAll('[data-category-link]');
+        const noResults = document.getElementById('no-results');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim().toLocaleLowerCase();
+            let visibleItems = 0;
+
+            menuCategories.forEach((category) => {
+                const items = category.querySelectorAll('li, [data-menu-item]');
+                let categoryHasMatch = false;
+
+                items.forEach((item) => {
+                    const matches = item.textContent.toLocaleLowerCase().includes(query);
+                    item.hidden = !matches;
+                    categoryHasMatch ||= matches;
+                });
+
+                category.hidden = !categoryHasMatch;
+                visibleItems += categoryHasMatch ? 1 : 0;
+            });
+
+            categoryLinks.forEach((link) => {
+                const category = document.getElementById(link.dataset.categoryLink);
+                link.hidden = category.hidden;
+            });
+
+            noResults.hidden = visibleItems > 0;
+        });
+    </script>
+</body>
+</html>
